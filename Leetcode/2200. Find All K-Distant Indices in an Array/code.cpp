@@ -3,7 +3,7 @@
 #include <set>
 using namespace std;
 
-class Solution {
+class Solution { 
 public:
     vector<int> findKDistantIndices(vector<int>& nums, int key, int k) {
         set<int> resultSet;  
@@ -15,7 +15,7 @@ public:
                 for (int i = start; i <= end; i++) {
                     resultSet.insert(i);
                 }
-            }
+            } 
         }
         vector<int> result(resultSet.begin(), resultSet.end());
         return result;
